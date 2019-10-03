@@ -1,0 +1,14 @@
+eureka:
+ client:
+  register-with-eureka: false
+  fetch-registry: false
+
+server:
+ port: 8761
+
+encrypt:
+   key: client-key
+
+security: 
+ basic: 
+  enabled: true 

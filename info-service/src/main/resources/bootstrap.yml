@@ -1,11 +1,15 @@
+server:
+ port: 8893
+
 spring:
  cloud:
   config:
    uri: http://localhost:8888
  application: 
-  name: product-service
+  name: info-service
   
 eureka:
  client:
   serviceUrl:
    defaultZone: http://localhost:8761/eureka/
+ 

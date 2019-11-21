@@ -4,9 +4,10 @@ plugins {
 	id 'java'
 }
 
-group = 'com.cafeteria.maker'
+group = 'com.appcom.your.turn'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
+
 
 repositories {
 	mavenCentral()
@@ -25,4 +26,12 @@ dependencyManagement {
 	imports {
 		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
 	}
+}
+
+
+
+jar {
+    manifest { 
+    	attributes "Main-Class": "com.appcom.yourturn.configserver.ConfigServerApplication" 
+    }
 }

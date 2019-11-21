@@ -1,0 +1,22 @@
+spring:
+ application:
+  name: zuul-server
+
+server: 
+ port: 8000
+  
+zuul: 
+ routes: 
+  product:
+   url: http://localhost:8891
+   path: /product-service/**
+  user: 
+   url: http://localhost:8892
+   path: /user-service/**
+  info: 
+   url: http://localhost:8893
+   path: /info-service/**
+  scheduling: 
+   url: http://localhost:8894
+   path: /scheduling-service/**
+  
